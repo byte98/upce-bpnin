@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ticket>
+    <header>
+        <field name="issued" top="500" left="10" font-size="24" font-weight="bold"></field>
+        <field name="id" top="500" left="210" font-size="24" font-weight="bold"></field>
+    </header>
+    <body>
+        <field name="tariff" top="450" left="5" font-size="18"></field>
+        <field name="from" top="390" left="52" max-length="24" font-weight="bold" font-size="24"></field>
+        <field name="to" top="235" left="52" max-length="24" font-weight="bold" font-size="24"></field>
+        <field name="validity" top="160" left="85" font-size="24"></field>
+        <field name="distance" top="110" left="85" font-size="24"></field>
+    </body>
+    <footer>
+        <text content="Cena bez DPH" top="90" left="15" font-size="12"></text>
+        <text content="Price without VAT" top="78" left="15" font-size="12"></text>
+        <field name="price-wo-vat" top="85" left="150" font-size="18"></field>
+        <text content="DPH" top="66" left="15" font-size="12"></text>
+        <text content="VAT" top="54" left="15" font-size="12"></text>
+        <field name="vat" top="61" left="60" font-size="18"></field>
+        <field name="vat-price" top="61" left="150" font-size="18"></field>
+        <field name="price" top="72" left="285" font-size="56" font-weight="bold"></field>
+    </footer>
+</ticket>

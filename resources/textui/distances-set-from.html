@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+Copyright (C) 2021 Jiri Skoda <skodaji1@uhk.cz>
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+-->
+<html>
+    <head>
+        <style type='text/css'>
+            body{
+                font-family: 'Lucida Console';
+                color: gray;
+                background-color: black;
+                font-size: 16pt
+            }
+            table tbody tr td:first-child{
+                color: yellow;
+            }
+        </style>
+    </head>
+    <center>
+        <div style="background-color: blue; color: yellow">
+            <h2>Nastaveni vzdalenosti mezi stanicemi</h2>
+            <hr>
+            <table style="width: 100%">
+                <tbody>
+                    <tr>
+                        <td>Ze stanice</td>
+                        <td style="color: yellow; background-color: yellow;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Do stanice</td>
+                        <td style="color: gray; background-color: gray;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Vzdalenost</td>
+                        <td style="color: black; background-color: gray; text-align: right;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>km</i>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <table>
+            <caption>Seznam stanic</caption>
+            <thead>
+                <tr>
+                    <th style="color: green;">Zkratka</th>
+                    <th>Nazev</th>
+                </tr>
+            </thead>
+            <tbody>
+                {$stations_tr}
+            </tbody>
+        </table>
+    </center>
+</html>

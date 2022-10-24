@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+Copyright (C) 2021 Jiri Skoda <skodaji1@uhk.cz>
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+-->
+<html>
+    <head>
+        <style type='text/css'>body{font-family: 'Lucida Console'; color: gray; background-color: black; font-size: 16pt}</style>
+    </head>
+    <body>
+        <center>
+            <div style="background-color: red; color: yellow">
+                <b>Smazani tarifu</b>
+                <hr>
+                <p>Opravdu chcete smazat nasledujici tarif?</p>
+                <sup>Tato akce je nevratna!</sup>
+                <p>&nbsp;{$tariff_name}&nbsp;({$tariff_abbr})&nbsp;</p>
+            </div>
+            <div>
+                <div>
+                    <b>Cenik tarifu {$tariff_name}</b>
+                    <table style="display: inline">
+                        <thead>
+                            <tr>
+                                <td>Vzdalenost</td>
+                                <td style="color: white">Cena</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {$tariff_prices}
+                        </tbody>
+                    </table>
+                </div>
+            </div>            
+        </center>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+Copyright (C) 2021 Jiri Skoda <skodaji1@uhk.cz>
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+-->
+<html>
+    <head>
+        <title>JTicket - Sale</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type='text/css'>
+            body{
+                font-family: 'Lucida Console';
+                color: gray;
+                background-color: black;
+                font-size: 20pt
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center; color: yellow">Nova jizdenka</h1>
+        <table style="width: 100%">
+            <tr>
+                <td>Tarif</td>
+                <td style="background-color: gray; color: black;"><i>&nbsp;{$ticket_tariff}&nbsp;</i></td>
+                <td>Cislo dokladu</td>
+                <td><i>&nbsp;{$ticket_id}&nbsp;</i></td>
+            </tr>
+            <tr>
+                <td>Z</td>
+                <td colspan="3" style="background-color: yellow; color: black;"><i>&nbsp;{$ticket_from}&nbsp;</i></td>
+            </tr>
+            <tr>
+                <td>Do</td>
+                <td colspan="3" style="background-color: gray; color: black;"><i>&nbsp;{$ticket_to}&nbsp;</i></td>
+            </tr>
+            <tr>
+                <td>Platnost</td>
+                <td><i>&nbsp;{$ticket_validity}&nbsp;</i></td>
+                <td>Vzdalenost</td>
+                <td><i>&nbsp;{$ticket_distance}&nbsp;</i></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: right">Cena</td>
+                <td colspan="2" style="color: white; font-size: 24pt;">&nbsp;{$ticket_price}&nbsp;Kc&nbsp;</td>
+            </tr>
+        </table>
+    </body>
+</html>

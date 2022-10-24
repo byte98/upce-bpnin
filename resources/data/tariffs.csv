@@ -1,0 +1,6 @@
+abbr, name, type
+IDS,Tarif integrovaneho dopravniho systemu,Z
+ZTR,Zakladni tarif,D
+LTR,Zlevneny tarif,D
+KTR,Krajsky tarif,Z
+STR,Sluzebni tarif,D
