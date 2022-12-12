@@ -230,7 +230,7 @@ public class Ticket
         StringBuilder validity = new StringBuilder();
         validity.append(String.format("%02d", validTo.getTime().getDate()));
         validity.append(".");
-        validity.append(String.format("%02d", validTo.getTime().getMonth()));
+        validity.append(String.format("%02d", validTo.getTime().getMonth() + 1));
         validity.append(".");
         validity.append(validTo.getTime().getYear() + 1900);
         validity.append(" ");
